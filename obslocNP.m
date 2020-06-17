@@ -506,7 +506,7 @@ if p.solve.tEvent
 end
 s.srEvent.nevt = m;
 
-%% plotting error ellipse 
+%% plotting error ellipse % uncommet if plotting error ellipse
 % 
 % n1=[0;0;1];
 % n2=[0;1;0];
