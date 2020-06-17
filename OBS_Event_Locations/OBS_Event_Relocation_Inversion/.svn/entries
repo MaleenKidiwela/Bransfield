@@ -1,0 +1,43 @@
+10
+
+dir
+241
+svn://newberry.uoregon.edu/ETOMO/OBS_Event_Locations/trunk/OBS_Event_Relocation_Inversion
+svn://newberry.uoregon.edu/ETOMO
+
+
+
+2010-06-22T18:44:29.860310Z
+12
+drt
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5a8f558a-e646-4437-8918-918b4c16dc6d
+
+Obsloc_Structures
+dir
+
+Ray_Tables
+dir
+
+Inversion_Code
+dir
+
+Check_Inversion
+dir
+
+Sounding_Velocities
+dir
+
