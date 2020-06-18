@@ -1,4 +1,4 @@
-%% plotting velocity variability
+%% plotting velocity variability - use obslocNP in run_obsloc_bravoseis > s = obslocN(p);
 
 srGeometry  = load_srGeometry('srGeometryOrca_v1.mat');
 srStation   = load_srStation('srStationOrcaDeploy_v1.mat',srGeometry);
