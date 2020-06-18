@@ -52,7 +52,7 @@ p.Event.tErrorApr = 0.01;
 p.nlookup = 1;
 p.lookup(1).eventElevation = -0.015;
 % % p.nlookup = 2;
-addpath('/Users/earthnote/Desktop/Brainsfield/OBS_Event_Locations/OBS_Event_Relocation_Inversion/Ray_Tables')
+addpath('/Users/earthnote/Desktop/Bransfield/OBS_Event_Locations/OBS_Event_Relocation_Inversion/Ray_Tables')
 
 p.lookup(1).file = 'TTtables_simple.mat';
 % % p.lookup(1).file = 'ray_ttTable_AverageWaterVel1_9.mat'; 
@@ -84,5 +84,5 @@ p.yLabelRmsNorm = 10;
 s = obsloc(p);
 s.reloc_description = 'Testing for Bransfield station relocation';
 
-cd '/Users/earthnote/Desktop/Brainsfield/OBS_Event_Locations/OBS_Event_Relocation_Inversion/Obsloc_Structures';
+cd '/Users/earthnote/Desktop/Bransfield/OBS_Event_Locations/OBS_Event_Relocation_Inversion/Obsloc_Structures';
 save Obsloc_structure_stations_xy_events_xy s
