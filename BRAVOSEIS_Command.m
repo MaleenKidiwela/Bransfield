@@ -21,16 +21,3 @@ tlArrival = tlPick2tlArrival(srEvent, srStation, tlPickDir, stationIn, PhaseIn, 
 TTtables_simple;
 run_obsloc_bravoseis;
 
-
-
-
-%%
-surf([1445:1465],[13,14,15,16,18,19,20,21,22,23,24,25,26],[rms(1445:1465).a])
-xlabel('velocity')
-ylabel('Station')
-zlabel('RMS-Norm')
-
-plot([1445:1465],rms(1,:));
-xlabel('velocity (m/s)')
-ylabel('rmsNorm')
-title('Normalized RMS variability with velocity')

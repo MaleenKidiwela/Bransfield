@@ -44,3 +44,14 @@ for i=1:14
 end
 
 legend('BRA13','BRA14','BRA15','BRA16','BRA18','BRA19','BRA20','BRA21','BRA22','BRA23','BRA24','BRA25','BRA26','BRA27')
+
+%%
+surf([1445:1465],[13,14,15,16,18,19,20,21,22,23,24,25,26],[rms(1445:1465).a])
+xlabel('velocity')
+ylabel('Station')
+zlabel('RMS-Norm')
+
+plot([1445:1465],rms(1,:));
+xlabel('velocity (m/s)')
+ylabel('rmsNorm')
+title('Normalized RMS variability with velocity')

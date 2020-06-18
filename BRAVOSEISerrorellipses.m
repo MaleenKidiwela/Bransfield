@@ -10,6 +10,7 @@ rlim = [0 Inf]
 
 stat ={'BRA13','BRA14','BRA15','BRA16','BRA18','BRA19','BRA20','BRA21','BRA22','BRA23','BRA24','BRA25','BRA26','BRA27'}
 v = 1456;
+
 for ii = 1:13
 stationIn =stat(ii); % to isolate what you want to relocate
 PhaseIn ={'Pw'};  
@@ -31,3 +32,4 @@ axis('equal')
 hold on
 
 end
+
