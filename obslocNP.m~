@@ -428,13 +428,14 @@ for iter = 1:p.iterMax+1;
     end
   end
 
-
+  [maplong, maplati] = xy2map(xStation,yStation,p.srGeometry);
   
 end % End of inversion look
 
 
 %% Outputs
-
+s.StatlonOrig = maplong;
+s.StatlatOrig = maplati;
 s.converged = converged;
 s.iter = iter;
 s.xStation = xStation;
