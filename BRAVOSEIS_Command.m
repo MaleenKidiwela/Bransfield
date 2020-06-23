@@ -35,3 +35,15 @@ figure
 histogram(a)
 
 
+%% Plotting event detection 
+
+plot(srEvent.x,srEvent.y,'g.','MarkerSize',12)
+hold on 
+logic = logical(a < 3);
+plot(s.xEvent(logic),s.yEvent(logic),'.','MarkerSize',12)
+logic = logical(a == 3);
+plot(s.xEvent(logic),s.yEvent(logic),'.','MarkerSize',12)
+logic = logical(a > 3);
+plot(s.xEvent(logic),s.yEvent(logic),'.','MarkerSize',12)
+title('Events detected by stations')
+legend('Event Unused','<3','3','>3')
