@@ -21,3 +21,17 @@ tlArrival = tlPick2tlArrival(srEvent, srStation, tlPickDir, stationIn, PhaseIn, 
 TTtables_simple;
 run_obsloc_bravoseis;
 
+%% Hitogram of misfits
+
+e= s.time-s.timePred;
+e= e(:);
+e=e(~isnan(e));
+figure
+histfit(e)
+std(e)
+
+a=sum(~isnan(s.time),2);
+figure
+histogram(a)
+
+
