@@ -1,5 +1,8 @@
 function s = obslocNP(p)
 % Function to relocate OBSs (and shots)
+%prevents all printing of figures when doing the inversion 
+%created by Maleen Kidiwela 05/05/2020
+
 % Usage
 %   s = obsloc(p)
 %
@@ -207,7 +210,7 @@ for iter = 1:p.iterMax+1;
   depth = zStation(StationIndex,:);
   timePred = NaN(m,n);
   dtdr = NaN(m,n);
-  dtdz = NaN(m,n);
+  dtdz = NaN(m,n); 
   % Use multiple lookup tables to get times (handles variable shot depths) 
   % Cubic interpolation deals better with NaNs in lookup tables than spline
   for ilookup = 1:p.nlookup
@@ -428,13 +431,10 @@ for iter = 1:p.iterMax+1;
     end
   end
 
-
-  
 end % End of inversion look
 
 
 %% Outputs
-
 s.converged = converged;
 s.iter = iter;
 s.xStation = xStation;
@@ -509,7 +509,7 @@ if p.solve.tEvent
 end
 s.srEvent.nevt = m;
 
-%% plotting error ellipse % uncommet if plotting error ellipse
+%% plotting error ellipse  - Uncomment when plotting error ellipse
 % 
 % n1=[0;0;1];
 % n2=[0;1;0];
