@@ -1,0 +1,39 @@
+1	number of FIR Filters in this file
+FLinear-1	name of filter
+16.000000	delay in seconds
+31	number of points in this filter
+1.000000	digital gain of filter
+1 sps	output rate 
+All Linear	Filter scheme selected
+coefficients are non-symetric, listed in time order;	
+-1.2200398E-16
+3.3727755E-11
+-3.1909384E-07
+1.2631313E-06
+-1.4849098E-05
+3.3219901E-03
+1.0832298E-03
+-6.2404554E-03
+1.2656600E-02
+-1.5766333E-02
+9.5676215E-03
+1.0711024E-02
+-4.5642536E-02
+8.9752269E-02
+-1.3243683E-01
+1.5528949E-01
+8.1237051E-01
+1.8541491E-01
+-1.4060896E-01
+8.9708332E-02
+-4.2439674E-02
+7.1400103E-03
+1.2105062E-02
+-1.6930727E-02
+1.2773526E-02
+-5.8642360E-03
+6.4517735E-04
+3.4871288E-03
+-8.5305808E-05
+2.2971342E-06
+-2.2583023E-07
