@@ -5,9 +5,9 @@ clear defaultMenu
 
 % Experiment
 defaultMenu.experiment.srGeometry = '/Users/earthnote/Desktop/Brainsfield/Stingray/srGeometryOrca_V1.mat';
-defaultMenu.experiment.srStation = '/Users/earthnote/Desktop/Brainsfield/Stingray/srStationOrcaDeploy_v1.mat';
+defaultMenu.experiment.srStation = '/Users/earthnote/Desktop/Brainsfield/Stingray/srStationOrcaDeploy_v2.mat';
 defaultMenu.experiment.srEvent = '/Users/earthnote/Desktop/Brainsfield/Stingray/srEventOrcaTomo_v1.mat';
-defaultMenu.experiment.segyCatalog = '/Users/earthnote/Desktop/Brainsfield/segyCatalog_BRAVOSEIS.mat';
+defaultMenu.experiment.segyCatalog = '/Users/earthnote/Desktop/Brainsfield/segyCatalog_BRAVOSEIS_v2.mat';
 
 % Trace Selection
 defaultMenu.segy.station = 'BRA13';
