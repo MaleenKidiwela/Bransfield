@@ -14,10 +14,6 @@ ff = ff(:);
 [H,b,delay] = q330_firfilt_response('FLinear-200.txt', ff);
 st = filter(b,1,imp);
 
-plot(st)
-hold on
-plot(imp)
-
 % subtract delay
 %delay = round(delay/dt)*dt;  % this avoids some distortion.
 stff = fft(st);
@@ -29,16 +25,16 @@ stf = real(ifft(tmp1));
 % plot
 figure
 subplot(311);
-pltseis(imp,dt,0,0,20,'b-'); grid on
+pltseis(imp,dt,0,2.4,2.7,'bo-'); grid on
 subplot(312);
-pltseis(st,dt,0,0,20,'b-'); grid on;
+pltseis(st,dt,0,2.4,2.7,'bo-'); grid on;
 subplot(313);
-pltseis(stf,dt,0,0,20,'b-'); grid on;
+pltseis(stf,dt,0,2.4,2.7,'bo-'); grid on;
 
 figure
 subplot(311);
-pltseis(imp,dt,0,0,20,'bo-'); grid on
+pltseis(imp,dt,0,2.4,2.7,'bo-'); grid on
 subplot(312);
-pltseis(st,dt,0,0,20,'bo-'); grid on;
+pltseis(st,dt,0,2.4,2.7,'bo-'); grid on;
 subplot(313);
-pltseis(stf,dt,0,0,20,'bo-'); grid on;
+pltseis(stf,dt,0,2.4,2.7,'bo-'); grid on;
