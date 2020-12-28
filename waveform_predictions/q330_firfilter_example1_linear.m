@@ -2,7 +2,7 @@
 
 % make impulse
 dt = 1/2000;
-imp = [1;zeros(1000,1)];
+%imp = [1;zeros(500,1)];
 
 kpts = length(imp);
 dff = 1/(kpts*dt);
@@ -29,16 +29,16 @@ stf = real(ifft(tmp1));
 % plot
 figure
 subplot(311);
-pltseis(imp,dt,0,0,20,'b-'); grid on
+pltseis(imp,dt,0,0,0.2,'b-'); grid on
 subplot(312);
-pltseis(st,dt,0,0,20,'b-'); grid on;
+pltseis(st,dt,0,0,0.2,'b-'); grid on;
 subplot(313);
-pltseis(stf,dt,0,0,20,'b-'); grid on;
+pltseis(stf,dt,0,0,0.2,'b-'); grid on;
 
 figure
 subplot(311);
-pltseis(imp,dt,0,0,20,'bo-'); grid on
+pltseis(imp,dt,0,0,2,'bo-'); grid on
 subplot(312);
-pltseis(st,dt,0,0,20,'bo-'); grid on;
+pltseis(st,dt,0,0,2,'bo-'); grid on;
 subplot(313);
-pltseis(stf,dt,0,0,20,'bo-'); grid on;
+pltseis(stf,dt,0,0,2,'bo-'); grid on;
