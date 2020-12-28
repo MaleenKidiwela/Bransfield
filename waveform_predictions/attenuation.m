@@ -95,3 +95,4 @@ conv1= conv(airgun(:,2),pulse3);
 conv2 = conv(conv1,st1);
 conv3 = conv(conv2,amp);
 
+plot(real(conv3))
