@@ -5,7 +5,7 @@ function [t, pulse0, pulse, f, Qw, cw ] = azimi( N, Dt, x, c0, Q, f0 )
 % x  propagation distance in km (e.g. 100)
 % Q  low frequency quality factor (e.g. 10)
 % N  number of samples in pulse (e.g. 1024);
-% Dt sampling interbal (e.g. 0.1)
+% Dt sampling interval (e.g. 0.1)
 % returned values
 % t time array
 % pulse0 input pulse, a unit spike at time N/2
@@ -14,9 +14,10 @@ function [t, pulse0, pulse, f, Qw, cw ] = azimi( N, Dt, x, c0, Q, f0 )
 % Qw frequency dependent quality factors
 % cw frequency dependent phase velocities
 % time series
+
 t = Dt*[0:N-1]';
 pulse0 = zeros(N,1);
-pulse0(N/2)=1;
+pulse0(1)=1;
 % standard fft setup
 fny = 1/(2*Dt);
 N2 = N/2+1;
