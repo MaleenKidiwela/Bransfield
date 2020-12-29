@@ -2,7 +2,7 @@
 
 % make impulse
 dt = 1/2000;
-imp = [1;zeros(500,1)];
+imp = [zeros(500,1);1;zeros(500,1)];
 
 kpts = length(imp);
 dff = 1/(kpts*dt);
