@@ -103,20 +103,14 @@ load('currentMenu.mat')
 currentMenu=currentMenuFilt;
 traceMetaData.samprate(1)=2000;
 constantSamprate=true;
-flim(1) = currentMenu.filter.lim0;
-flim(2) = currentMenu.filter.lim1;
-wlim = flim * 2 * (1/traceMetaData.samprate(1));
+
 
 
 for i=1:7
     traceDataUnfilt=conv3(:,i);
-    %butter_filterSEGY
-    [b,a] = butter(ceil(currentMenu.filter.order),wlim(1),'high');
-    traceData = filter(b,a,traceDataUnfilt);
-    
+    butter_filterSEGY
     filtered_data(:,i)= traceData;
-    clear traceData b a traceDataUnfilt
-    disp(['Filtered with a band-pass filter at [' num2str(flim(1)) '] Hz '])
+    clear traceData
 end
 
 figure(3)
