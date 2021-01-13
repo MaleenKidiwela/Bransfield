@@ -123,10 +123,11 @@ figure(3)
 clf
 hold on
 for i= 1:7
-    plot((0:length(conv3(:,i))-1)*Dt,real(conv3(:,i)))
+    plot((0:length(filtered_data(:,i))-1)*Dt,real(filtered_data(:,i)))
 end
+
 xlim([0 1])
 legend('x=30','x=25','x=20','x=15','x=10','x=5','x=1')
-title('Waveforms predicted_filterd')
+title('Waveforms predicted filterd')
 xlabel('t')
 
