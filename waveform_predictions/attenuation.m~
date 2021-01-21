@@ -139,17 +139,14 @@ for y = 1:7
     norm_data(:,y) = (filtered_data(:,y) - min(filtered_data(:,y))) / ( max(filtered_data(:,y)) - min(filtered_data(:,y)));
 end
 
-
-r=1:2:13;
-for i=1:7
-    norm_data(:,i)=norm_data(:,i)+r(i);
-    
-end
-
 figure(4)
 for i= 1:7
     plot((0:length(norm_data(:,i))-1)*Dt,real(norm_data(:,i)));
     hold on
 end
-xlim([0 1])
-legend('x=30','x=25','x=20','x=15','x=10','x=5','x=1')
+
+r=1:2:13;
+for i=1:7
+    norm_data(:,i)
+    
+end
