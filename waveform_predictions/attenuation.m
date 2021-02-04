@@ -6,7 +6,7 @@ Q1 = 100;   % quality factor at low frequencies
 f0 = 2500;  % frequency below which
 N = 10000;  % number of samples in azimi's time series
 N1 = 1000;  % Number of samples in geophone and quanterra responses 
-Dt = 0.0005; % sampling interva
+Dt = 0.0005; % sampling interval
 c0=5;      % low frequency velocity
 
 i=0;
